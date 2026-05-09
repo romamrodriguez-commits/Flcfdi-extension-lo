@@ -1,0 +1,16 @@
+
+Factura Libre CFDI 3.2 - Universo Libre México, A.C.
+
+    www.universolibre.org
+
+    * IMPORTANTE *
+
+    Por favor reinicia LibreOffice completamente despues de instalar Factura Libre CFDI
+    No olvides también reiniciar el icono de acceso rapido
+
+    Despues de reniciar puedes iniciar Factura Libre desde el menú correspondiente
+
+    * LICENCIA *
+
+    GPL v3
+
