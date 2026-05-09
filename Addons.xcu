@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+    <node oor:name="AddonUI">
+        <node oor:name="OfficeMenuBar">
+            <node oor:name="FacturaLibreCFDI.OfficeMenuBar" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value>Factura ~Libre CFDI</value>
+                </prop>
+                <node oor:name="Submenu">
+                    <node oor:name="m0" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>service:org.universolibre.facturalibre.cfdi?close</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>Cerrar empresa</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                            <value>%origin%/icons/close</value>
+                        </prop>
+                    </node>
+                    <node oor:name="m1" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>service:org.universolibre.facturalibre.cfdi?configuracion</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>C~onfiguración</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                            <value>%origin%/icons/config</value>
+                        </prop>
+                    </node>
+                    <node oor:name="m2" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>service:org.universolibre.facturalibre.cfdi?clientes</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>~Clientes y proveedores</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                            <value>%origin%/icons/clientes</value>
+                        </prop>
+                    </node>
+                    <node oor:name="m3" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>service:org.universolibre.facturalibre.cfdi?productosadmin</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>~Productos y servicios</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                            <value>%origin%/icons/productos</value>
+                        </prop>
+                    </node>
+                    <node oor:name="m4" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>~Ventas</value>
+                        </prop>
+                        <node oor:name="Submenu">
+                            <node oor:name="m4.s1" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?admincfdi</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Administrar CFDI</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/admincfd</value>
+                                </prop>
+                            </node>
+                            <node oor:name="m4.s2" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?generarcfdi</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Generar CFDI</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/cfd</value>
+                                </prop>
+                            </node>
+                            <node oor:name="m4.s3" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Reportes</value>
+                                </prop>
+                                <node oor:name="Submenu">
+                                    <node oor:name="m4.s3.s1" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>~Totales</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?repclitot</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                    <node oor:name="m4.s3.s2" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>~Clientes</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?reportes</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                    <node oor:name="m4.s3.s3" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>~Productos</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?repprod</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                </node>
+                            </node>
+                        </node>
+                    </node>
+                    <node oor:name="m5" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>Co~mpras</value>
+                        </prop>
+                        <node oor:name="Submenu">
+                            <node oor:name="m5.s1" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Administrar</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?admincompras</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/note.png</value>
+                                </prop>
+                            </node>
+                            <node oor:name="m5.s2" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Importar XML</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?importXML</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/xml2</value>
+                                </prop>
+                            </node>
+                            <node oor:name="m5.s3" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Reportes</value>
+                                </prop>
+                                <node oor:name="Submenu">
+                                    <node oor:name="m5.s3.s1" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>~Totales</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?repprotot</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                    <node oor:name="m5.s3.s2" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>~Proveedores</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?reportep</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                    <node oor:name="m5.s3.s3" oor:op="replace">
+                                        <prop oor:name="Context" oor:type="xs:string">
+                                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                                        </prop>
+                                        <prop oor:name="Title" oor:type="xs:string">
+                                            <value>Produc~tos</value>
+                                        </prop>
+                                        <prop oor:name="URL" oor:type="xs:string">
+                                            <value>service:org.universolibre.facturalibre.cfdi?repprop</value>
+                                        </prop>
+                                        <prop oor:name="Target" oor:type="xs:string">
+                                            <value>_self</value>
+                                        </prop>
+                                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                            <value>%origin%/icons/note.png</value>
+                                        </prop>
+                                    </node>
+                                </node>
+                            </node>
+                        </node>
+                    </node>
+                    <node oor:name="m6" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>~Nomina</value>
+                        </prop>
+                        <node oor:name="Submenu">
+                            <node oor:name="m6.s1" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?adminnomina</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Administrar Nomina CFDI</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/admincfd</value>
+                                </prop>
+                            </node>
+                            <node oor:name="m6.s2" oor:op="replace">
+                                <prop oor:name="Context" oor:type="xs:string">
+                                    <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                                </prop>
+                                <prop oor:name="URL" oor:type="xs:string">
+                                    <value>service:org.universolibre.facturalibre.cfdi?empleados</value>
+                                </prop>
+                                <prop oor:name="Title" oor:type="xs:string">
+                                    <value>~Administrar Empleados</value>
+                                </prop>
+                                <prop oor:name="Target" oor:type="xs:string">
+                                    <value>_self</value>
+                                </prop>
+                                <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                    <value>%origin%/icons/empleados</value>
+                                </prop>
+                            </node>
+                        </node>
+                    </node>
+                    <node oor:name="m7" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.sdb.OfficeDatabaseDocument,com.sun.star.script.BasicIDE</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>service:org.universolibre.facturalibre.cfdi?tools</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value>~Utilidades</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                            <value>%origin%/icons/tools</value>
+                        </prop>
+                    </node>
+                </node>
+            </node>
+        </node>
+    </node>
+</oor:component-data>

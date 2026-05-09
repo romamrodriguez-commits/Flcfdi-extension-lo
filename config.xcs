@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-schema
+oor:name="Configuration"
+oor:package="org.universolibre.facturalibre.cfdi" xml:lang="es-MX"
+xmlns:oor="http://openoffice.org/2001/registry"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <templates/>
+    <component>
+        <group oor:name="Settings">
+            <info>
+                <desc>CFD Configuracion</desc>
+            </info>
+            <prop oor:name="CFDOrigin" oor:type="xs:string">
+                <info>
+                    <desc>Origen de CFDI</desc>
+                </info>
+            </prop>
+            <prop oor:name="Empresas" oor:type="xs:string">
+                <info>
+                    <desc>Nombres de los emisores</desc>
+                </info>
+            </prop>
+            <prop oor:name="Rutas" oor:type="xs:string">
+                <info>
+                    <desc>Rutas de trabajo</desc>
+                </info>
+            </prop>
+            <prop oor:name="Actual" oor:type="xs:string">
+                <info>
+                    <desc>Ruta de trabajo actualmente abierta</desc>
+                </info>
+            </prop>
+        </group>
+    </component>
+</oor:component-schema>

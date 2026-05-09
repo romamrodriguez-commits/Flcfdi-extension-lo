@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgAdminNomina" dlg:left="7" dlg:top="6" dlg:width="440" dlg:height="285" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss" dlg:font-weight="100"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Liberation Sans" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="2" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="3" dlg:text-color="0xff" dlg:border="simple" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Negrita" dlg:font-family="swiss" dlg:font-weight="150"/>
+  <dlg:style dlg:style-id="4" dlg:text-color="0xff0000" dlg:border="simple" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Negrita" dlg:font-family="swiss" dlg:font-weight="150"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="lblAno" dlg:tab-index="0" dlg:left="6" dlg:top="6" dlg:width="20" dlg:height="10" dlg:value="Año " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:menulist dlg:style-id="1" dlg:id="lstAno" dlg:tab-index="1" dlg:left="28" dlg:top="5" dlg:width="39" dlg:height="12" dlg:help-text="Selecciona el año" dlg:spin="true" dlg:linecount="10"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblMes" dlg:tab-index="2" dlg:left="70" dlg:top="6" dlg:width="20" dlg:height="10" dlg:value="Mes " dlg:align="right"/>
+  <dlg:menulist dlg:style-id="2" dlg:id="lstMes" dlg:tab-index="3" dlg:left="92" dlg:top="5" dlg:width="55" dlg:height="12" dlg:help-text="Selecciona el mes" dlg:spin="true" dlg:linecount="15">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Todos" dlg:selected="true"/>
+    <dlg:menuitem dlg:value="Enero"/>
+    <dlg:menuitem dlg:value="Febrero"/>
+    <dlg:menuitem dlg:value="Marzo"/>
+    <dlg:menuitem dlg:value="Abril"/>
+    <dlg:menuitem dlg:value="Mayo"/>
+    <dlg:menuitem dlg:value="Junio"/>
+    <dlg:menuitem dlg:value="Julio"/>
+    <dlg:menuitem dlg:value="Agosto"/>
+    <dlg:menuitem dlg:value="Septiembre"/>
+    <dlg:menuitem dlg:value="Octubre"/>
+    <dlg:menuitem dlg:value="Noviembre"/>
+    <dlg:menuitem dlg:value="Diciembre"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:style-id="0" dlg:id="lblReceptor" dlg:tab-index="4" dlg:left="149" dlg:top="6" dlg:width="34" dlg:height="10" dlg:value="Empleado" dlg:align="right"/>
+  <dlg:textfield dlg:style-id="2" dlg:id="txtReceptor" dlg:tab-index="5" dlg:left="186" dlg:top="5" dlg:width="235" dlg:height="12" dlg:help-text="Buscar Receptor" dlg:value="Todos"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdFiltrar1" dlg:tab-index="6" dlg:left="422" dlg:top="4" dlg:width="12" dlg:height="14" dlg:tag="1" dlg:help-text="Filtrar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="7" dlg:left="6" dlg:top="18" dlg:width="428" dlg:height="6"/>
+  <dlg:fixedline dlg:id="FixedLine3" dlg:tab-index="8" dlg:left="232" dlg:top="22" dlg:width="5" dlg:height="20" dlg:align="vertical"/>
+  <dlg:menulist dlg:style-id="2" dlg:id="lstReportes" dlg:tab-index="9" dlg:left="238" dlg:top="25" dlg:width="84" dlg:height="12" dlg:help-text="Selecciona un reporte" dlg:spin="true"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdReportes" dlg:tab-index="10" dlg:left="324" dlg:top="24" dlg:width="12" dlg:height="14" dlg:tag="3" dlg:help-text="Reportes Personalizados" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:fixedline dlg:id="FixedLine4" dlg:tab-index="11" dlg:left="336" dlg:top="22" dlg:width="5" dlg:height="20" dlg:align="vertical"/>
+  <dlg:checkbox dlg:style-id="2" dlg:id="chkDetalle" dlg:tab-index="12" dlg:left="342" dlg:top="26" dlg:width="54" dlg:height="10" dlg:value="Ver Detalle" dlg:checked="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdSeleccionarTodo" dlg:tab-index="13" dlg:left="398" dlg:top="24" dlg:width="12" dlg:height="14" dlg:page="8" dlg:help-text="Selecciona todas las filas"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdLimpiarSeleccion" dlg:tab-index="14" dlg:left="410" dlg:top="24" dlg:width="12" dlg:height="14" dlg:page="8" dlg:help-text="Desmarca las filas"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdSinTimbrar" dlg:tab-index="15" dlg:left="422" dlg:top="24" dlg:width="12" dlg:height="14" dlg:page="8" dlg:help-text="Muestra las facturas sin timbrar"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdSalir" dlg:tab-index="18" dlg:left="374" dlg:top="250" dlg:width="60" dlg:height="14" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="3" dlg:id="lblInfo" dlg:tab-index="19" dlg:left="6" dlg:top="270" dlg:width="254" dlg:height="12" dlg:value="Mensajes"/>
+  <dlg:text dlg:style-id="3" dlg:id="lblVersion" dlg:tab-index="20" dlg:left="262" dlg:top="270" dlg:width="80" dlg:height="12" dlg:value="Factura Libre" dlg:align="center" dlg:tabstop="false"/>
+  <dlg:text dlg:style-id="4" dlg:id="lblFoliosPac" dlg:tab-index="21" dlg:left="344" dlg:top="270" dlg:width="90" dlg:height="12" dlg:value="Folios PAC: 1" dlg:align="center"/>
+  <dlg:fixedline dlg:id="FixedLine5" dlg:tab-index="16" dlg:left="6" dlg:top="38" dlg:width="428" dlg:height="6"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdImportar" dlg:tab-index="22" dlg:left="7" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Importar datos" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdEnviar" dlg:tab-index="23" dlg:left="65" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Enviar a timbrar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:progressmeter dlg:id="pbInfo" dlg:tab-index="17" dlg:left="7" dlg:top="233" dlg:width="425" dlg:height="11" dlg:value="1" dlg:value-min="1"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdPdf" dlg:tab-index="24" dlg:left="123" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Generar PDF" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdCancelar" dlg:tab-index="25" dlg:left="239" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Cancelar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="26" dlg:left="5" dlg:top="26" dlg:width="42" dlg:height="10" dlg:value="Fecha de pago" dlg:align="right"/>
+  <dlg:menulist dlg:style-id="2" dlg:id="lstFechaPago" dlg:tab-index="27" dlg:left="50" dlg:top="25" dlg:width="56" dlg:height="12" dlg:help-text="Selecciona un reporte" dlg:spin="true" dlg:linecount="20"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdDelete" dlg:tab-index="28" dlg:left="298" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Eliminar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdCopyXML" dlg:tab-index="29" dlg:left="181" dlg:top="250" dlg:width="55" dlg:height="14" dlg:value="Extraer XML" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:fixedline dlg:id="FixedLine2" dlg:tab-index="30" dlg:left="105" dlg:top="21" dlg:width="5" dlg:height="20" dlg:align="vertical"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label2" dlg:tab-index="31" dlg:left="111" dlg:top="25" dlg:width="20" dlg:height="10" dlg:value="Folio " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="2" dlg:id="txtFolio" dlg:tab-index="32" dlg:left="133" dlg:top="24" dlg:width="38" dlg:height="12" dlg:help-text="Buscar CFD"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdFolio" dlg:tab-index="33" dlg:left="173" dlg:top="23" dlg:width="12" dlg:height="14" dlg:tag="2" dlg:help-text="Buscar CFD" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

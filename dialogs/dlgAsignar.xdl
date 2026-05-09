@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgAsignar" dlg:tab-index="0" dlg:left="16" dlg:top="3" dlg:width="370" dlg:height="250" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label3" dlg:tab-index="0" dlg:left="3" dlg:top="4" dlg:width="89" dlg:height="8" dlg:page="2" dlg:value="Nodos en CFDI (Factura)" dlg:align="center"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdGuardar" dlg:tab-index="3" dlg:left="294" dlg:top="212" dlg:width="70" dlg:height="12" dlg:value="Guardar y salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdSalir" dlg:tab-index="4" dlg:left="294" dlg:top="232" dlg:width="70" dlg:height="12" dlg:value="Salir sin guardar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblAtributo" dlg:tab-index="2" dlg:left="95" dlg:top="4" dlg:width="80" dlg:height="8" dlg:page="2" dlg:value="Atributos" dlg:align="center"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label2" dlg:tab-index="6" dlg:left="95" dlg:top="83" dlg:width="80" dlg:height="8" dlg:page="2" dlg:value="Personalizados" dlg:align="center"/>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="7" dlg:left="93" dlg:top="78" dlg:width="98" dlg:height="5"/>
+  <dlg:fixedline dlg:id="FixedLine2" dlg:tab-index="11" dlg:left="3" dlg:top="155" dlg:width="365" dlg:height="5"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblValorNodo" dlg:tab-index="12" dlg:left="288" dlg:top="4" dlg:width="80" dlg:height="8" dlg:page="2" dlg:value="Valor del Nodo" dlg:align="center"/>
+  <dlg:checkbox dlg:id="chkValorNodo" dlg:tab-index="13" dlg:left="290" dlg:top="17" dlg:width="78" dlg:height="9" dlg:value="Asignar al valor del nodo" dlg:checked="false"/>
+  <dlg:treecontrol dlg:id="treeFactura" dlg:tab-index="1" dlg:left="3" dlg:top="15" dlg:width="90" dlg:height="137" dlg:selectiontype="single"/>
+  <dlg:treecontrol dlg:id="treeAddenda" dlg:tab-index="8" dlg:left="195" dlg:top="15" dlg:width="90" dlg:height="137" dlg:selectiontype="single"/>
+  <dlg:menulist dlg:id="lstAtributosFactura" dlg:tab-index="14" dlg:left="95" dlg:top="15" dlg:width="80" dlg:height="60"/>
+  <dlg:button dlg:id="cmdAsignarNodo" dlg:tab-index="9" dlg:left="179" dlg:top="38" dlg:width="12" dlg:height="12" dlg:image-position="left-center" dlg:image-align="left"/>
+  <dlg:button dlg:id="cmdAsignarPersonalizado" dlg:tab-index="10" dlg:left="179" dlg:top="110" dlg:width="12" dlg:height="12" dlg:image-position="left-center" dlg:image-align="left"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdEliminar" dlg:tab-index="16" dlg:left="294" dlg:top="163" dlg:width="70" dlg:height="12" dlg:value="Eliminar asignación" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:menulist dlg:id="lstPersonalizados" dlg:tab-index="15" dlg:left="95" dlg:top="94" dlg:width="80" dlg:height="59"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblAddenda" dlg:tab-index="5" dlg:left="195" dlg:top="4" dlg:width="90" dlg:height="8" dlg:page="2" dlg:value="Addenda" dlg:align="center"/>
+ </dlg:bulletinboard>
+</dlg:window>

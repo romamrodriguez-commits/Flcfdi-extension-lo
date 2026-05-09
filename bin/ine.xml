@@ -1,0 +1,8 @@
+<ine:INE
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/ine http://www.sat.gob.mx/sitio_internet/cfd/ine/ine10.xsd"
+    xmlns:ine="http://www.sat.gob.mx/ine"
+    Version="1.0"
+    TipoProceso="{}"
+    TipoComite="{}"
+    IdContabilidad="{}" />

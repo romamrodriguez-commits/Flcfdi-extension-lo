@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlg_complements" dlg:tab-index="0" dlg:left="16" dlg:top="3" dlg:width="440" dlg:height="285" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff"/>
+  <dlg:style dlg:style-id="1" dlg:text-color="0x80" dlg:font-weight="150"/>
+  <dlg:style dlg:style-id="2" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="label_title_complement" dlg:tab-index="3" dlg:left="5" dlg:top="9" dlg:width="43" dlg:height="8" dlg:page="2" dlg:value="Complemento " dlg:align="right"/>
+  <dlg:text dlg:style-id="1" dlg:id="label_complement" dlg:tab-index="0" dlg:left="51" dlg:top="9" dlg:width="122" dlg:height="9" dlg:page="1"/>
+  <dlg:textfield dlg:id="node" dlg:tab-index="6" dlg:visible="false" dlg:left="4" dlg:top="21" dlg:width="127" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmd_node_update" dlg:tab-index="10" dlg:visible="false" dlg:left="161" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmd_node_add" dlg:tab-index="7" dlg:visible="false" dlg:left="133" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmd_node_delete" dlg:tab-index="1" dlg:visible="false" dlg:left="147" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:treecontrol dlg:id="tree_complement" dlg:tab-index="4" dlg:left="4" dlg:top="36" dlg:width="169" dlg:height="244" dlg:selectiontype="single"/>
+  <dlg:text dlg:style-id="0" dlg:id="label_value" dlg:tab-index="18" dlg:left="180" dlg:top="41" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Valor " dlg:align="right"/>
+  <dlg:textfield dlg:id="attribute_value" dlg:tab-index="17" dlg:left="217" dlg:top="38" dlg:width="100" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmd_attribute_update" dlg:tab-index="13" dlg:visible="false" dlg:left="319" dlg:top="38" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="label_attribute" dlg:tab-index="16" dlg:visible="false" dlg:left="180" dlg:top="26" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Atributo " dlg:align="right"/>
+  <dlg:textfield dlg:id="attribute_name" dlg:tab-index="2" dlg:visible="false" dlg:left="217" dlg:top="23" dlg:width="100" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmd_attribute_add" dlg:tab-index="12" dlg:visible="false" dlg:left="319" dlg:top="23" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmd_attribute_delete" dlg:tab-index="11" dlg:visible="false" dlg:left="333" dlg:top="23" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="label_title_node" dlg:tab-index="5" dlg:visible="false" dlg:left="180" dlg:top="10" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Valor Nodo" dlg:align="right"/>
+  <dlg:textfield dlg:id="node_value" dlg:tab-index="14" dlg:visible="false" dlg:left="217" dlg:top="8" dlg:width="100" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmd_node_value_update" dlg:tab-index="15" dlg:visible="false" dlg:left="319" dlg:top="8" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmd_save" dlg:tab-index="8" dlg:left="215" dlg:top="265" dlg:width="70" dlg:height="12" dlg:value="Guardar y salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmd_close" dlg:tab-index="9" dlg:left="339" dlg:top="265" dlg:width="70" dlg:height="12" dlg:value="Salir sin guardar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:id="label_grid_attributes" dlg:tab-index="19" dlg:left="180" dlg:top="55" dlg:width="250" dlg:height="190"/>
+  <dlg:menulist dlg:id="lst_values" dlg:tab-index="20" dlg:left="217" dlg:top="38" dlg:width="100" dlg:height="12" dlg:spin="true"/>
+ </dlg:bulletinboard>
+</dlg:window>

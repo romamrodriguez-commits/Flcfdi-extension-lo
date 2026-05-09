@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgAlumnos" dlg:left="11" dlg:top="8" dlg:width="350" dlg:height="285" dlg:closeable="true" dlg:moveable="true" dlg:title="Alumnos">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0xc0c0c0" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss" dlg:font-weight="100"/>
+  <dlg:style dlg:style-id="1" dlg:background-color="0xffcc99" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss" dlg:font-weight="100"/>
+  <dlg:style dlg:style-id="2" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="0" dlg:left="8" dlg:top="2" dlg:width="35" dlg:height="10" dlg:value="Clave " dlg:align="right"/>
+  <dlg:text dlg:style-id="1" dlg:id="Label2" dlg:tab-index="1" dlg:left="8" dlg:top="15" dlg:width="35" dlg:height="11" dlg:value="Razon Social " dlg:align="right"/>
+  <dlg:text dlg:id="lblClave" dlg:tab-index="2" dlg:left="48" dlg:top="2" dlg:width="29" dlg:height="9"/>
+  <dlg:text dlg:id="lblCliente" dlg:tab-index="3" dlg:left="48" dlg:top="14" dlg:width="211" dlg:height="10"/>
+  <dlg:text dlg:style-id="1" dlg:id="Label3" dlg:tab-index="4" dlg:left="168" dlg:top="32" dlg:width="90" dlg:height="8" dlg:value="CURP" dlg:align="center"/>
+  <dlg:text dlg:style-id="1" dlg:id="Label4" dlg:tab-index="5" dlg:left="8" dlg:top="32" dlg:width="156" dlg:height="8" dlg:value="Alumno" dlg:align="center"/>
+  <dlg:textfield dlg:id="txtAlumno" dlg:tab-index="6" dlg:left="8" dlg:top="43" dlg:width="156" dlg:height="12"/>
+  <dlg:textfield dlg:id="txtCurp" dlg:tab-index="7" dlg:left="168" dlg:top="43" dlg:width="90" dlg:height="12" dlg:maxlength="20"/>
+  <dlg:text dlg:style-id="1" dlg:id="Label5" dlg:tab-index="9" dlg:left="262" dlg:top="32" dlg:width="80" dlg:height="8" dlg:value="Nivel" dlg:align="center"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdGuardar" dlg:tab-index="10" dlg:left="79" dlg:top="263" dlg:width="70" dlg:height="14" dlg:value="Guardar y salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdSalir" dlg:tab-index="11" dlg:left="202" dlg:top="263" dlg:width="70" dlg:height="14" dlg:value="Salir sin guardar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdAgregar" dlg:tab-index="12" dlg:left="14" dlg:top="61" dlg:width="70" dlg:height="14" dlg:value="Agregar Alumno" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdEliminar" dlg:tab-index="13" dlg:left="140" dlg:top="61" dlg:width="70" dlg:height="14" dlg:value="Eliminar Alumno" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:menulist dlg:id="lstNivel" dlg:tab-index="8" dlg:left="262" dlg:top="43" dlg:width="80" dlg:height="12" dlg:spin="true"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdCambiarNivel" dlg:tab-index="14" dlg:left="265" dlg:top="61" dlg:width="70" dlg:height="14" dlg:value="Cambiar Nivel" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

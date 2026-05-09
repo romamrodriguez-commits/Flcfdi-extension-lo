@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgRutas" dlg:left="9" dlg:top="8" dlg:width="225" dlg:height="140" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0xffcc99" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="0" dlg:left="60" dlg:top="7" dlg:width="100" dlg:height="8" dlg:page="3" dlg:value="Selecciona un emisor" dlg:align="center"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdSalir" dlg:tab-index="1" dlg:left="126" dlg:top="120" dlg:width="60" dlg:height="12" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdEntrar" dlg:tab-index="2" dlg:left="27" dlg:top="120" dlg:width="60" dlg:height="12" dlg:value="Entrar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

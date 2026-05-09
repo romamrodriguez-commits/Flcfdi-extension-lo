@@ -1,0 +1,8 @@
+<donat:Donatarias
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd"
+    xmlns:donat="http://www.sat.gob.mx/donat"
+    version="1.1"
+    noAutorizacion="{}"
+    fechaAutorizacion="{:%Y-%m-%d}"
+    leyenda="Este comprobante ampara un donativo, el cual será destinado por la donataria a los fines propios de su objeto social. En el caso de que los bienes donados hayan sido deducidos previamente para los efectos del impuesto sobre la renta, este donativo no es deducible." />

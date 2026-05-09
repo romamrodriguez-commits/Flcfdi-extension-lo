@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgAddProducts" dlg:tab-index="0" dlg:left="16" dlg:top="3" dlg:width="259" dlg:height="186" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff"/>
+  <dlg:style dlg:style-id="1" dlg:font-weight="150"/>
+  <dlg:style dlg:style-id="2" dlg:text-color="0x80" dlg:font-weight="150"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="cmdSalir" dlg:tab-index="0" dlg:left="189" dlg:top="166" dlg:width="60" dlg:height="12" dlg:help-text="Presiona ESCAPE (ESC) para salir" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label4" dlg:tab-index="1" dlg:left="8" dlg:top="14" dlg:width="35" dlg:height="10" dlg:value="Archivo ODS" dlg:align="right"/>
+  <dlg:filecontrol dlg:id="fileProductos" dlg:tab-index="3" dlg:left="46" dlg:top="11" dlg:width="203" dlg:height="14"/>
+  <dlg:text dlg:style-id="1" dlg:id="Label1" dlg:tab-index="4" dlg:left="6" dlg:top="35" dlg:width="243" dlg:height="28" dlg:value="IMPORTANTE: &#x0a;Todos los productos ya deben estar en el catálogo de productos.&#x0a;Las siguientes opciones serán aplicadas a cada producto agregado."/>
+  <dlg:button dlg:id="cmdAgregarProductos" dlg:tab-index="2" dlg:left="81" dlg:top="127" dlg:width="100" dlg:height="13" dlg:value="Agregar productos" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="2" dlg:id="lblInfo" dlg:tab-index="5" dlg:left="6" dlg:top="67" dlg:width="243" dlg:height="51"/>
+ </dlg:bulletinboard>
+</dlg:window>

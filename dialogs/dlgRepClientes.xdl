@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:style-id="0" dlg:id="dlgRepClientes" dlg:left="80" dlg:top="100" dlg:width="280" dlg:height="84" dlg:closeable="true" dlg:moveable="true" dlg:title="Reportes de clientes">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Predeterminado" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="lblDesde" dlg:tab-index="0" dlg:left="8" dlg:top="8" dlg:width="28" dlg:height="10" dlg:value="Desde "/>
+  <dlg:datefield dlg:style-id="0" dlg:id="txtFechaIni" dlg:tab-index="1" dlg:left="38" dlg:top="7" dlg:width="44" dlg:height="12" dlg:strict-format="true" dlg:date-format="short_DDMMYYYY" dlg:value-min="20100101" dlg:value-max="20201231" dlg:dropdown="true"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblHasta" dlg:tab-index="2" dlg:left="86" dlg:top="8" dlg:width="20" dlg:height="10" dlg:value="hasta "/>
+  <dlg:datefield dlg:style-id="0" dlg:id="txtFechaFin" dlg:tab-index="3" dlg:left="108" dlg:top="7" dlg:width="44" dlg:height="12" dlg:strict-format="true" dlg:date-format="short_DDMMYYYY" dlg:value-min="20100101" dlg:value-max="20201231" dlg:dropdown="true"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblTipo" dlg:tab-index="4" dlg:left="200" dlg:top="8" dlg:width="20" dlg:height="10" dlg:value="Tipo "/>
+  <dlg:menulist dlg:style-id="0" dlg:id="lstTipo" dlg:tab-index="5" dlg:left="224" dlg:top="7" dlg:width="50" dlg:height="14" dlg:help-text="Selecciona el mes" dlg:spin="true" dlg:linecount="3">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Todos" dlg:selected="true"/>
+    <dlg:menuitem dlg:value="Ingresos"/>
+    <dlg:menuitem dlg:value="Egresos"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:style-id="0" dlg:id="lblCliente" dlg:tab-index="6" dlg:left="8" dlg:top="24" dlg:width="28" dlg:height="10" dlg:value="Cliente "/>
+  <dlg:menulist dlg:style-id="0" dlg:id="lstClientes" dlg:tab-index="7" dlg:left="38" dlg:top="23" dlg:width="236" dlg:height="12" dlg:help-text="Selecciona el cliente" dlg:spin="true" dlg:linecount="10"/>
+  <dlg:checkbox dlg:style-id="0" dlg:id="chkDesglozado" dlg:tab-index="8" dlg:left="8" dlg:top="40" dlg:width="100" dlg:height="10" dlg:value="Desglosado por producto" dlg:checked="false"/>
+  <dlg:checkbox dlg:style-id="0" dlg:id="chkCancelados" dlg:tab-index="9" dlg:left="180" dlg:top="40" dlg:width="86" dlg:height="10" dlg:value="No reportar cancelados" dlg:checked="true"/>
+  <dlg:titledbox dlg:style-id="0" dlg:id="frmOrdenado" dlg:tab-index="10" dlg:left="7" dlg:top="55" dlg:width="112" dlg:height="24">
+   <dlg:title dlg:value="Ordenado por"/>
+  </dlg:titledbox>
+  <dlg:radiogroup>
+   <dlg:radio dlg:style-id="0" dlg:id="optFecha" dlg:tab-index="11" dlg:left="11" dlg:top="64" dlg:width="42" dlg:height="10" dlg:value="Fecha" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optCliente" dlg:tab-index="12" dlg:left="64" dlg:top="64" dlg:width="48" dlg:height="10" dlg:value="Cliente" dlg:group-name="ordenar"/>
+  </dlg:radiogroup>
+  <dlg:button dlg:style-id="0" dlg:id="cmdSalir" dlg:tab-index="13" dlg:left="204" dlg:top="64" dlg:width="70" dlg:height="14" dlg:value="Salir"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdGenerar" dlg:tab-index="14" dlg:left="130" dlg:top="64" dlg:width="70" dlg:height="14" dlg:value="Generar reporte"/>
+ </dlg:bulletinboard>
+</dlg:window>

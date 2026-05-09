@@ -1,0 +1,17 @@
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" sello="" certificado="" fecha="" LugarExpedicion="" Moneda="" TipoCambio="" folio="" formaDePago="" metodoDePago="" noCertificado="" serie="" subTotal="" tipoDeComprobante="" total="" version="">
+  <cfdi:Emisor nombre="" rfc="">
+    <cfdi:DomicilioFiscal calle="" codigoPostal="" colonia="" estado="" municipio="" noExterior="" noInterior="" pais="" />
+    <cfdi:RegimenFiscal Regimen="" />
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="" rfc="">
+    <cfdi:Domicilio calle="" codigoPostal="" colonia="" estado="" municipio="" noExterior=""  noInterior="" pais="" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="" descripcion="" importe="" noIdentificacion="" unidad="" valorUnitario="" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="">
+    <cfdi:Traslados>
+      <cfdi:Traslado importe="" impuesto="" tasa="" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

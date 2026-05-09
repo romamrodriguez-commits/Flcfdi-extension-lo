@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgNiveles" dlg:left="120" dlg:top="70" dlg:width="173" dlg:height="148" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="0" dlg:left="4" dlg:top="12" dlg:width="80" dlg:height="10" dlg:page="5" dlg:value="Nivel" dlg:align="center" dlg:tabstop="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label2" dlg:tab-index="1" dlg:left="87" dlg:top="12" dlg:width="80" dlg:height="10" dlg:page="5" dlg:value="Autorización" dlg:align="center" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="txtNivel" dlg:tab-index="2" dlg:left="4" dlg:top="25" dlg:width="80" dlg:height="12" dlg:page="5" dlg:tag=""/>
+  <dlg:textfield dlg:style-id="1" dlg:id="txtAutorizacion" dlg:tab-index="3" dlg:left="87" dlg:top="25" dlg:width="80" dlg:height="12" dlg:page="5" dlg:tag=""/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdEliminar" dlg:tab-index="5" dlg:left="93" dlg:top="40" dlg:width="70" dlg:height="14" dlg:page="5" dlg:value="Eliminar Nivel" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdAgregar" dlg:tab-index="4" dlg:left="9" dlg:top="40" dlg:width="70" dlg:height="14" dlg:page="5" dlg:value="Agregar Nivel" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgProductosAdmin" dlg:left="0" dlg:top="0" dlg:width="352" dlg:height="266" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0xffcc99" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="2" dlg:text-color="0xff0000" dlg:border="0x333333" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss" dlg:font-weight="150"/>
+  <dlg:style dlg:style-id="3" dlg:background-color="0x83caff" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="0" dlg:left="6" dlg:top="8" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Clave" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="noIdentificacion" dlg:tab-index="1" dlg:left="54" dlg:top="7" dlg:width="50" dlg:height="12" dlg:page="3" dlg:align="center" dlg:readonly="true"/>
+  <dlg:checkbox dlg:style-id="1" dlg:id="chkAutomatica" dlg:tab-index="2" dlg:left="108" dlg:top="6" dlg:width="50" dlg:height="10" dlg:value="Automática" dlg:checked="true"/>
+  <dlg:text dlg:style-id="2" dlg:id="id" dlg:tab-index="3" dlg:left="166" dlg:top="7" dlg:width="50" dlg:height="11" dlg:align="center" dlg:tabstop="false"/>
+  <dlg:text dlg:style-id="3" dlg:id="Label2" dlg:tab-index="4" dlg:left="6" dlg:top="24" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Categoria" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="categoria" dlg:tab-index="5" dlg:left="54" dlg:top="23" dlg:width="140" dlg:height="12" dlg:page="3" dlg:tag="0" dlg:readonly="true"/>
+  <dlg:treecontrol dlg:id="treeCategorias" dlg:tab-index="6" dlg:left="54" dlg:top="35" dlg:width="150" dlg:height="80" dlg:page="6" dlg:tag="Categorías" dlg:tabstop="true" dlg:selectiontype="single" dlg:rootdisplayed="false" dlg:editable="true"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdMostrarCategorias" dlg:tab-index="7" dlg:left="194" dlg:top="22" dlg:width="12" dlg:height="14" dlg:page="8" dlg:tag="Muestra la tabla de impuestos" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdAgregarCategoria" dlg:tab-index="8" dlg:disabled="true" dlg:left="206" dlg:top="22" dlg:width="12" dlg:height="14" dlg:page="8" dlg:tag="Agregar Categoría"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label3" dlg:tab-index="9" dlg:left="6" dlg:top="40" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Descripción" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="descripcion" dlg:tab-index="10" dlg:left="54" dlg:top="39" dlg:width="292" dlg:height="50" dlg:page="3" dlg:vscroll="true" dlg:multiline="true"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label4" dlg:tab-index="11" dlg:left="6" dlg:top="94" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Unidad" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:combobox dlg:style-id="1" dlg:id="unidad" dlg:tab-index="12" dlg:left="54" dlg:top="93" dlg:width="150" dlg:height="12" dlg:spin="true"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label5" dlg:tab-index="13" dlg:left="6" dlg:top="110" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Valor Unitario" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:numericfield dlg:style-id="1" dlg:id="valorUnitario" dlg:tab-index="14" dlg:left="54" dlg:top="109" dlg:width="150" dlg:height="12" dlg:strict-format="true" dlg:value-min="-100000000" dlg:value-max="100000000" dlg:spin="true"/>
+  <dlg:text dlg:style-id="2" dlg:id="lblIva" dlg:tab-index="15" dlg:left="206" dlg:top="109" dlg:width="40" dlg:height="12" dlg:value="Incluye IVA" dlg:align="center" dlg:tabstop="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label7" dlg:tab-index="16" dlg:left="6" dlg:top="126" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Impuestos" dlg:align="right" dlg:tabstop="true"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdLimpiarSeleccion" dlg:tab-index="17" dlg:left="204" dlg:top="124" dlg:width="12" dlg:height="14" dlg:page="8" dlg:tag="Muestra la tabla de impuestos"/>
+  <dlg:text dlg:style-id="3" dlg:id="Label9" dlg:tab-index="18" dlg:left="6" dlg:top="200" dlg:width="60" dlg:height="8" dlg:page="3" dlg:value="Controlar Inventario " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:checkbox dlg:style-id="1" dlg:id="chkInventario" dlg:tab-index="19" dlg:left="68" dlg:top="198" dlg:width="10" dlg:height="10" dlg:checked="false"/>
+  <dlg:text dlg:style-id="3" dlg:id="lblExistencia" dlg:tab-index="20" dlg:left="80" dlg:top="200" dlg:width="46" dlg:height="10" dlg:page="3" dlg:value="Existencia" dlg:align="right" dlg:tabstop="false"/>
+  <dlg:numericfield dlg:style-id="1" dlg:id="existencia" dlg:tab-index="21" dlg:left="128" dlg:top="198" dlg:width="88" dlg:height="12" dlg:strict-format="true" dlg:value="0" dlg:value-min="-100000000" dlg:value-max="100000000" dlg:spin="true"/>
+  <dlg:text dlg:style-id="3" dlg:id="lblcodigobarras" dlg:tab-index="22" dlg:left="6" dlg:top="216" dlg:width="60" dlg:height="8" dlg:page="3" dlg:value="Código de Barras " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="codigobarras" dlg:tab-index="23" dlg:left="68" dlg:top="214" dlg:width="148" dlg:height="12" dlg:page="3"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblCuentaPredial" dlg:tab-index="24" dlg:left="6" dlg:top="232" dlg:width="60" dlg:height="10" dlg:page="3" dlg:value="Cuenta Predial " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:checkbox dlg:style-id="1" dlg:id="chkCuentaPredial" dlg:tab-index="25" dlg:left="68" dlg:top="230" dlg:width="10" dlg:height="10" dlg:checked="false"/>
+  <dlg:textfield dlg:style-id="1" dlg:id="CuentaPredial" dlg:tab-index="26" dlg:disabled="true" dlg:left="78" dlg:top="230" dlg:width="138" dlg:height="12" dlg:page="3"/>
+  <dlg:text dlg:style-id="3" dlg:id="Label6" dlg:tab-index="27" dlg:left="248" dlg:top="110" dlg:width="36" dlg:height="10" dlg:page="3" dlg:value="Cantidad " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:numericfield dlg:style-id="1" dlg:id="cantidad" dlg:tab-index="28" dlg:left="286" dlg:top="109" dlg:width="60" dlg:height="12" dlg:strict-format="true" dlg:value="1" dlg:value-min="0" dlg:value-max="100000000" dlg:spin="true"/>
+  <dlg:text dlg:style-id="3" dlg:id="Label8" dlg:tab-index="29" dlg:left="244" dlg:top="181" dlg:width="36" dlg:height="8" dlg:page="3" dlg:value="Total " dlg:align="right" dlg:tabstop="false"/>
+  <dlg:numericfield dlg:style-id="1" dlg:id="total" dlg:tab-index="30" dlg:left="282" dlg:top="179" dlg:width="60" dlg:height="12" dlg:strict-format="true" dlg:value="0" dlg:value-min="0" dlg:value-max="100000000" dlg:spin="true"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdGuardar" dlg:tab-index="31" dlg:left="31" dlg:top="248" dlg:width="70" dlg:height="14" dlg:value="Guardar y salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="1" dlg:id="cmdSalir" dlg:tab-index="32" dlg:left="117" dlg:top="248" dlg:width="70" dlg:height="14" dlg:value="Salir sin guardar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

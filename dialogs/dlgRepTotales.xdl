@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:style-id="0" dlg:id="dlgRepTotales" dlg:left="80" dlg:top="100" dlg:width="240" dlg:height="79" dlg:closeable="true" dlg:moveable="true" dlg:title="Reportes de clientes">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Predeterminado" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="lblDesde" dlg:tab-index="0" dlg:left="8" dlg:top="8" dlg:width="22" dlg:height="10" dlg:value="Desde "/>
+  <dlg:datefield dlg:style-id="0" dlg:id="txtFechaIni" dlg:tab-index="1" dlg:left="31" dlg:top="7" dlg:width="48" dlg:height="12" dlg:strict-format="true" dlg:date-format="short_DDMMYYYY" dlg:value-min="20100101" dlg:value-max="20201231" dlg:dropdown="true"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblHasta" dlg:tab-index="2" dlg:left="84" dlg:top="8" dlg:width="20" dlg:height="10" dlg:value="hasta "/>
+  <dlg:datefield dlg:style-id="0" dlg:id="txtFechaFin" dlg:tab-index="3" dlg:left="106" dlg:top="7" dlg:width="48" dlg:height="12" dlg:strict-format="true" dlg:date-format="short_DDMMYYYY" dlg:value-min="20100101" dlg:value-max="20201231" dlg:dropdown="true"/>
+  <dlg:titledbox dlg:style-id="0" dlg:id="frmAgrupado" dlg:tab-index="4" dlg:left="4" dlg:top="23" dlg:width="156" dlg:height="50">
+   <dlg:title dlg:value="Agrupado por"/>
+  </dlg:titledbox>
+  <dlg:radiogroup>
+   <dlg:radio dlg:style-id="0" dlg:id="optFacturas" dlg:tab-index="5" dlg:left="8" dlg:top="35" dlg:width="70" dlg:height="10" dlg:value="Facturas de venta" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optNotas" dlg:tab-index="6" dlg:left="8" dlg:top="47" dlg:width="70" dlg:height="10" dlg:value="Notas de crédito" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optProductos" dlg:tab-index="7" dlg:left="8" dlg:top="59" dlg:width="70" dlg:height="10" dlg:value="Producto vendido" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optTipo" dlg:tab-index="8" dlg:left="84" dlg:top="35" dlg:width="70" dlg:height="10" dlg:value="Egresos/Ingresos" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optMes" dlg:tab-index="9" dlg:left="84" dlg:top="47" dlg:width="70" dlg:height="10" dlg:value="Ventas del mes" dlg:group-name="Ordenar"/>
+   <dlg:radio dlg:style-id="0" dlg:id="optDia" dlg:tab-index="10" dlg:left="84" dlg:top="59" dlg:width="70" dlg:height="10" dlg:value="Ventas del día" dlg:group-name="Ordenar"/>
+  </dlg:radiogroup>
+  <dlg:button dlg:style-id="0" dlg:id="cmdSalir" dlg:tab-index="11" dlg:left="164" dlg:top="60" dlg:width="70" dlg:height="14" dlg:value="Salir"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdGenerar" dlg:tab-index="12" dlg:left="164" dlg:top="43" dlg:width="70" dlg:height="14" dlg:value="Generar reporte"/>
+ </dlg:bulletinboard>
+</dlg:window>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgRefacturar" dlg:left="7" dlg:top="6" dlg:width="370" dlg:height="250" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss" dlg:font-weight="100"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="0" dlg:left="4" dlg:top="6" dlg:width="15" dlg:height="8" dlg:value="Mes " dlg:align="right"/>
+  <dlg:menulist dlg:id="lstMes" dlg:tab-index="1" dlg:left="21" dlg:top="4" dlg:width="50" dlg:height="12" dlg:help-text="Selecciona el mes" dlg:spin="true" dlg:linecount="10">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Todos" dlg:selected="true"/>
+    <dlg:menuitem dlg:value="Enero"/>
+    <dlg:menuitem dlg:value="Febrero"/>
+    <dlg:menuitem dlg:value="Marzo"/>
+    <dlg:menuitem dlg:value="Abril"/>
+    <dlg:menuitem dlg:value="Mayo"/>
+    <dlg:menuitem dlg:value="Junio"/>
+    <dlg:menuitem dlg:value="Julio"/>
+    <dlg:menuitem dlg:value="Agosto"/>
+    <dlg:menuitem dlg:value="Septiembre"/>
+    <dlg:menuitem dlg:value="Octubre"/>
+    <dlg:menuitem dlg:value="Noviembre"/>
+    <dlg:menuitem dlg:value="Diciembre"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:style-id="0" dlg:id="Label2" dlg:tab-index="2" dlg:left="77" dlg:top="6" dlg:width="20" dlg:height="8" dlg:value="Estatus " dlg:align="right"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label3" dlg:tab-index="4" dlg:left="156" dlg:top="6" dlg:width="24" dlg:height="8" dlg:value="Receptor " dlg:align="right"/>
+  <dlg:button dlg:id="cmdSalir" dlg:tab-index="7" dlg:left="307" dlg:top="233" dlg:width="60" dlg:height="12" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:textfield dlg:id="txtReceptor" dlg:tab-index="5" dlg:left="182" dlg:top="4" dlg:width="120" dlg:height="12" dlg:help-text="Buscar Receptor" dlg:value="Todos"/>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="8" dlg:left="3" dlg:top="18" dlg:width="365" dlg:height="6"/>
+  <dlg:textfield dlg:id="txtCfd" dlg:tab-index="9" dlg:left="316" dlg:top="4" dlg:width="40" dlg:height="12" dlg:help-text="Buscar CFD"/>
+  <dlg:button dlg:id="cmdFiltrar1" dlg:tab-index="10" dlg:left="302" dlg:top="4" dlg:width="12" dlg:height="12" dlg:tag="1" dlg:help-text="Filtrar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdFiltrar2" dlg:tab-index="6" dlg:left="356" dlg:top="4" dlg:width="12" dlg:height="12" dlg:tag="2" dlg:help-text="Buscar CFD" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdLimpiarSeleccion" dlg:tab-index="11" dlg:visible="false" dlg:left="357" dlg:top="26" dlg:width="10" dlg:height="12" dlg:page="8" dlg:tag="Muestra la tabla de impuestos"/>
+  <dlg:menulist dlg:id="lstEstatus" dlg:tab-index="3" dlg:left="100" dlg:top="4" dlg:width="50" dlg:height="12" dlg:help-text="Selecciona el estatus" dlg:spin="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Todos" dlg:selected="true"/>
+    <dlg:menuitem dlg:value="Por pagar"/>
+    <dlg:menuitem dlg:value="Pagado"/>
+    <dlg:menuitem dlg:value="Cancelado"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:checkbox dlg:id="chkPrefacturas" dlg:tab-index="12" dlg:left="4" dlg:top="28" dlg:width="218" dlg:height="9" dlg:value="Buscar en las Pre-Facturas y Cotizaciones" dlg:checked="false"/>
+  <dlg:button dlg:id="cmdRefacturar" dlg:tab-index="13" dlg:left="239" dlg:top="233" dlg:width="60" dlg:height="12" dlg:value="Refacturar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdEliminar" dlg:tab-index="14" dlg:disabled="true" dlg:left="171" dlg:top="233" dlg:width="60" dlg:height="12" dlg:tag="EliminarCliente" dlg:value="Eliminar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdPdf" dlg:tab-index="15" dlg:left="7" dlg:top="232" dlg:width="12" dlg:height="12" dlg:tag="3" dlg:help-text="Generar PDF" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

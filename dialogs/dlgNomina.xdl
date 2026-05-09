@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgNomina" dlg:left="80" dlg:top="24" dlg:width="263" dlg:height="110" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:border="0x0"/>
+  <dlg:style dlg:style-id="1" dlg:text-color="0x66ff" dlg:font-weight="150"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="Label1" dlg:tab-index="0" dlg:left="5" dlg:top="10" dlg:width="252" dlg:height="16" dlg:value="TODOS LOS DATOS PARA IMPORTAR ESTA NOMINA SERÁN TOMADOS DE LA HOJA ACTIVA"/>
+  <dlg:button dlg:id="cmdCancelar" dlg:tab-index="2" dlg:left="151" dlg:top="40" dlg:width="80" dlg:height="20" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:progressmeter dlg:style-id="0" dlg:id="pbInfo" dlg:tab-index="3" dlg:left="5" dlg:top="89" dlg:width="250" dlg:height="10"/>
+  <dlg:text dlg:style-id="1" dlg:id="lblInfo" dlg:tab-index="4" dlg:left="6" dlg:top="69" dlg:width="250" dlg:height="11"/>
+  <dlg:button dlg:id="cmdEnviar" dlg:tab-index="5" dlg:left="91" dlg:top="40" dlg:width="80" dlg:height="20" dlg:value="Enviar a timbrar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdImportar" dlg:tab-index="1" dlg:left="33" dlg:top="40" dlg:width="80" dlg:height="20" dlg:value="Importar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

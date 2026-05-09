@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgProductos" dlg:left="0" dlg:top="0" dlg:width="400" dlg:height="285" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="1" dlg:font-name="Liberation Sans" dlg:font-height="10" dlg:background-color="0xcccccc" dlg:text-color="0x80" dlg:font-weight="150"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:button dlg:style-id="0" dlg:id="cmdNuevoProducto" dlg:tab-index="0" dlg:left="6" dlg:top="8" dlg:width="70" dlg:height="14" dlg:value="Nuevo" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdEditarProducto" dlg:tab-index="1" dlg:disabled="true" dlg:left="76" dlg:top="8" dlg:width="70" dlg:height="14" dlg:value="Editar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdEliminarProducto" dlg:tab-index="2" dlg:disabled="true" dlg:left="146" dlg:top="8" dlg:width="70" dlg:height="14" dlg:value="Eliminar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:textfield dlg:style-id="0" dlg:id="txtFiltrarProducto" dlg:tab-index="3" dlg:disabled="true" dlg:left="218" dlg:top="9" dlg:width="164" dlg:height="12"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdMostrarTodo" dlg:tab-index="4" dlg:disabled="true" dlg:left="384" dlg:top="8" dlg:width="12" dlg:height="14" dlg:page="8"/>
+  <dlg:text dlg:style-id="1" dlg:id="lblInfo" dlg:tab-index="6" dlg:left="6" dlg:top="266" dlg:width="88" dlg:height="10" dlg:value="Registros" dlg:tabstop="false"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdReporte" dlg:tab-index="7" dlg:left="102" dlg:top="264" dlg:width="12" dlg:height="14" dlg:page="8"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdFiltrar1" dlg:tab-index="8" dlg:left="114" dlg:top="264" dlg:width="12" dlg:height="14" dlg:page="8" dlg:help-text="Existencias menores a 0"/>
+  <dlg:button dlg:style-id="0" dlg:id="cmdSalir" dlg:tab-index="9" dlg:left="324" dlg:top="264" dlg:width="70" dlg:height="14" dlg:value="Salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+ </dlg:bulletinboard>
+</dlg:window>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="dlgEdit" dlg:tab-index="0" dlg:left="16" dlg:top="3" dlg:width="351" dlg:height="250" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0x83caff"/>
+  <dlg:style dlg:style-id="1" dlg:text-color="0x80" dlg:font-weight="150"/>
+  <dlg:style dlg:style-id="2" dlg:font-name="Arial" dlg:font-height="10" dlg:font-stylename="Normal" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:style-id="0" dlg:id="Label3" dlg:tab-index="3" dlg:left="5" dlg:top="9" dlg:width="39" dlg:height="8" dlg:page="2" dlg:value="Addenda " dlg:align="right"/>
+  <dlg:text dlg:style-id="1" dlg:id="lblAddenda" dlg:tab-index="0" dlg:left="47" dlg:top="9" dlg:width="124" dlg:height="9" dlg:page="1"/>
+  <dlg:treecontrol dlg:id="treeAddenda" dlg:tab-index="4" dlg:left="4" dlg:top="36" dlg:width="169" dlg:height="208" dlg:selectiontype="single"/>
+  <dlg:textfield dlg:id="txtAtributo" dlg:tab-index="2" dlg:left="217" dlg:top="23" dlg:width="100" dlg:height="12" dlg:page="1"/>
+  <dlg:textfield dlg:id="txtNodo" dlg:tab-index="6" dlg:left="4" dlg:top="21" dlg:width="127" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmdAgregarNodo" dlg:tab-index="7" dlg:left="133" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdEliminarNodo" dlg:tab-index="1" dlg:left="147" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdGuardar" dlg:tab-index="8" dlg:left="188" dlg:top="230" dlg:width="70" dlg:height="12" dlg:value="Guardar y salir" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:style-id="2" dlg:id="cmdSalir" dlg:tab-index="9" dlg:left="269" dlg:top="230" dlg:width="70" dlg:height="12" dlg:value="Salir sin guardar" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdActualizarNodo" dlg:tab-index="10" dlg:left="161" dlg:top="21" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdAgregarAtributo" dlg:tab-index="12" dlg:left="319" dlg:top="23" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdEliminarAtributo" dlg:tab-index="11" dlg:left="333" dlg:top="23" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:button dlg:id="cmdActualizarAtributo" dlg:tab-index="13" dlg:left="319" dlg:top="38" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="lblValor" dlg:tab-index="5" dlg:left="180" dlg:top="9" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Valor Nodo" dlg:align="right"/>
+  <dlg:textfield dlg:id="txtValor" dlg:tab-index="14" dlg:left="217" dlg:top="8" dlg:width="100" dlg:height="12" dlg:page="1"/>
+  <dlg:button dlg:id="cmdActualizarValor" dlg:tab-index="15" dlg:left="319" dlg:top="8" dlg:width="12" dlg:height="12" dlg:page="1" dlg:image-position="left-center" dlg:image-align="left" dlg:grab-focus="false"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label1" dlg:tab-index="16" dlg:left="180" dlg:top="26" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Atributo " dlg:align="right"/>
+  <dlg:text dlg:style-id="0" dlg:id="Label2" dlg:tab-index="18" dlg:left="180" dlg:top="41" dlg:width="35" dlg:height="8" dlg:page="2" dlg:value="Valor " dlg:align="right"/>
+  <dlg:textfield dlg:id="txtValorAtributo" dlg:tab-index="17" dlg:left="217" dlg:top="38" dlg:width="100" dlg:height="12" dlg:page="1"/>
+ </dlg:bulletinboard>
+</dlg:window>
